@@ -190,7 +190,7 @@ int main() {
     int i = 2;      
     int f = 0;       
 
-    // Step 4
+    
     printf("Enter a number: ");
     scanf("%d", &n);
 
@@ -264,7 +264,54 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+#include <stdio.h>
+
+int main() {
+    int i, j, n, k;
+
+    
+    scanf("%d", &n);
+
+    
+    i = 1;
+
+    
+    while (i <= n) {
+
+        
+        for (j = i; j <= n; j++) {
+            if (i == 1 || j == i)
+                printf("%d", j);
+            else
+                printf(" ");
+        }
+
+        
+        k = j - 2;
+
+        
+        for (j = 1; j <= i - 1; j++) {
+            if (i == n || j == i - 1)
+                printf("%d", k);
+            else
+                printf(" ");
+            k--;
+        }
+
+        
+        printf("\n");
+
+        
+        i++;
+    }
+
+    
+    return 0;
+}
+
 # Output:
+<img width="502" height="282" alt="image" src="https://github.com/user-attachments/assets/9369e799-185c-4554-bf56-309ab45233d4" />
+
 # Result: 
   Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -317,6 +364,46 @@ Thus, the program was implemented and executed successfully, and the required ou
   Decrease i by 1 and go back to Step 6.
 ### Step 8:
   Stop
+  #include <stdio.h>
+
+int main() {
+    int i, j;
+
+    // Step 4: Print 0 on the first line
+    printf("0\n");
+
+    // Step 5: Set i = 7
+    i = 7;
+
+    // Step 6: Repeat while i >= 1
+    while (i >= 1) {
+
+        // Step 6.1: For j = i to 7, print j
+        for (j = i; j <= 7; j++) {
+            printf("%d", j);
+        }
+
+        // Step 6.2: Print 0 in the center
+        printf("0");
+
+        // Step 6.3: For j = 7 down to i, print j
+        for (j = 7; j >= i; j--) {
+            printf("%d", j);
+        }
+
+        // Step 6.4: Move to the next line
+        printf("\n");
+
+        // Step 7: Decrease i
+        i--;
+    }
+
+    // Step 8: Stop
+    return 0;
+}
+
+<img width="367" height="243" alt="image" src="https://github.com/user-attachments/assets/8ef91e26-8a57-4b0b-81b3-73a6e128d855" />
+
 # Result:
   Thus, the program was implemented and executed successfully, and the required output was obtained.
 
